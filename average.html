@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average</title>
+</head>
+<body>
+    <h3>Average of four numbers</h3>
+
+    <script language="JavaScript">
+        function doCalcAvg(inpNum1, inpNum2, inpNum3, inpNum4)
+        {
+        var ans;
+        ans = (Number(inpNum1) + Number(inpNum2) + Number(inpNum3) + Number(inpNum4)) / 4;
+        return (ans);
+        }
+        
+        var inpNum1 = 4;
+        var inpNum2 = 4;
+        var inpNum3 = 4;
+        var inpNum4 = 4;
+        numAvg = doCalcAvg(inpNum1, inpNum2, inpNum3, inpNum4);
+        document.write("The average of the four numbers you entered is: " + numAvg);
+        </script>
+</body>
+</html>
