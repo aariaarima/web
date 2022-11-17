@@ -1,0 +1,87 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.0
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Nov 17, 2022 at 05:53 AM
+-- Server version: 10.4.25-MariaDB
+-- PHP Version: 8.1.10
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `eth`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `etha`
+--
+
+CREATE TABLE `etha` (
+  `Candidate_no` int(11) NOT NULL,
+  `St_name` varchar(255) NOT NULL,
+  `Address` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `etha`
+--
+
+INSERT INTO `etha` (`Candidate_no`, `St_name`, `Address`) VALUES
+(1, 'Garima', 'Tokha'),
+(2, 'Anisha', 'Tanahun'),
+(3, 'Saharsh', 'Bardibas'),
+(4, 'Shugam', 'Jhapa');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ethb`
+--
+
+CREATE TABLE `ethb` (
+  `Candidate_no` int(11) NOT NULL,
+  `S_name` varchar(255) NOT NULL,
+  `Add_cand` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `ethb`
+--
+
+INSERT INTO `ethb` (`Candidate_no`, `S_name`, `Add_cand`) VALUES
+(1, 'Gaurav', 'Nepal'),
+(2, 'Aaron', 'Turkey'),
+(3, 'Sahil', 'Belgium'),
+(4, 'Subu', 'Japan');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `etha`
+--
+ALTER TABLE `etha`
+  ADD PRIMARY KEY (`Candidate_no`);
+
+--
+-- Indexes for table `ethb`
+--
+ALTER TABLE `ethb`
+  ADD PRIMARY KEY (`Candidate_no`);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
